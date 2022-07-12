@@ -7,7 +7,6 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.example.newsapp.SelectListener;
 import com.example.newsapp.Models.NewsHeadlines;
 import com.squareup.picasso.Picasso;
@@ -39,9 +38,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomViewHolder> {
         holder.text_source.setText(headlines.get(position).getSource().getName());
 
         if(headlines.get(position).getUrlToImage()!=null){
-
             Picasso.get().load(headlines.get(position).getUrlToImage()).into(holder.img_headline);
-
         }
 
         holder.cardView.setOnClickListener(new View.OnClickListener() {
@@ -57,4 +54,3 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomViewHolder> {
         return headlines.size();
     }
 }
-
