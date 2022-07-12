@@ -1,5 +1,4 @@
 package com.example.newsapp.Models;
-
 import java.io.Serializable;
 
 public class Source implements Serializable {
