@@ -1,5 +1,4 @@
 package com.example.newsapp;
-
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -61,4 +60,3 @@ public class DBHelper extends SQLiteOpenHelper {
             return false;
     }
 }
-
