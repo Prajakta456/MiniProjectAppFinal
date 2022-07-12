@@ -1,7 +1,5 @@
 package com.example.newsapp;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
@@ -46,7 +44,7 @@ public class LoginActivity extends AppCompatActivity {
                     else{
                         Toast.makeText(LoginActivity.this, "Invalid credentials", Toast.LENGTH_SHORT).show();
                     }
-                }
+               }
             }
         });
     }
