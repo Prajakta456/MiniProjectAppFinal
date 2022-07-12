@@ -1,8 +1,6 @@
 package com.example.newsapp.Models;
-
 import java.io.Serializable;
 import java.util.List;
-
 public class NewsAPIResponse implements Serializable {
     String status;
     int totalResults;
