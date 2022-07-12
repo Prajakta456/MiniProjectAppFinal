@@ -10,7 +10,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
-
 import com.example.newsapp.Models.NewsApiResponse;
 import com.example.newsapp.Models.NewsHeadlines;
 
@@ -72,8 +71,6 @@ public class MainActivity extends AppCompatActivity implements SelectListener, V
         b7=findViewById(R.id.btn_7);
         b7.setOnClickListener(this);
 
-
-
         RequestManager manager=new RequestManager(this);
         manager.getNewsHeadlines(listener,"general",null);
     }
@@ -104,7 +101,6 @@ public class MainActivity extends AppCompatActivity implements SelectListener, V
         recyclerView.setLayoutManager(new GridLayoutManager(this, 1));
         adapter=new CustomAdapter(this, list,this);
 
-
         recyclerView.setAdapter(adapter);
     }
 
@@ -112,7 +108,7 @@ public class MainActivity extends AppCompatActivity implements SelectListener, V
     public void onNewsClicked(NewsHeadlines headlines) {
 
         startActivity(new Intent(MainActivity.this, Details.class )
-                .putExtra("data", headlines));
+               .putExtra("data", headlines));
 
     }
 
