@@ -1,5 +1,4 @@
 package com.example.newsapp;
-
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -13,7 +12,6 @@ public class CustomViewHolder extends RecyclerView.ViewHolder {
     TextView text_title,text_source;
     ImageView img_headline;
     CardView cardView;
-
 
     public CustomViewHolder(@NonNull View itemView) {
         super(itemView);
